@@ -1,7 +1,7 @@
 if NICKIEL_97
 
 config ZMK_KEYBOARD_NAME
-    default "Nickiel97"
+    default "Nickiel 97"
 
 config SPI
     default y
