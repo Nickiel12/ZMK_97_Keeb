@@ -1,0 +1,11 @@
+file_format: "1"
+id: nickiel_97
+name: Nickiel97
+type: shield
+url: https://github.com/Nickiel12/ZMK_97_Keeb/
+requires:
+  - nice_nano_v2
+features:
+  - keys
+  - underglow
+  - backlight
