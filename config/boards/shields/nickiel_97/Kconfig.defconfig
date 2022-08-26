@@ -3,7 +3,7 @@ if NICKIEL_97
 config ZMK_KEYBOARD_NAME
 	default "Nickiel 97"
 
-config CONFIG_ZMK_KSCAN_MATRIX_POLLING
+config ZMK_KSCAN_MATRIX_POLLING
 	default y
 	
 config SPI
