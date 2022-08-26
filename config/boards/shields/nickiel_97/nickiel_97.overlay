@@ -67,7 +67,7 @@
 			, <&shift_reg 14 (GPIO_ACTIVE_HIGH)>
 			, <&shift_reg 15 (GPIO_ACTIVE_HIGH)>
 		;
-		row_gpios
+		row-gpios
 			= <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			, <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
