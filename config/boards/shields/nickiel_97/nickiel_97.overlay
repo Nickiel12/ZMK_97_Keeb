@@ -22,7 +22,7 @@
 	chosen {
 		zmk,kscan = &kscan;
 		zmk,matrix_transform = &transform;
-		zmk,backlight = &backlight
+		zmk,backlight = &backlight;
 	};
 
 	backlight: leds {
