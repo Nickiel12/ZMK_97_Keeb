@@ -5,7 +5,21 @@ config ZMK_KEYBOARD_NAME
 
 config ZMK_KSCAN_MATRIX_POLLING
 	default y
-	
+
+# backlight configs
+config ZMK_BACKLIGHT
+	default y
+
+config PWM
+	default y
+
+config LED_PWM
+	default y
+
+config ZMK_BACKLIGHT_AUTO_OFF_IDLE
+	config y
+# end of backlight configs
+
 config SPI
 	default y
 
