@@ -25,7 +25,7 @@
 		zmk,backlight = &backlight;
 	};
 
-	backlight: leds {
+	backlight: pwmleds {
 		compatible = "pwm-leds";
 		label = "Backlight LEDs";
 		pwm_led_0 {
