@@ -17,7 +17,7 @@ config LED_PWM
 	default y
 
 config ZMK_BACKLIGHT_AUTO_OFF_IDLE
-	config y
+	default y
 # end of backlight configs
 
 config SPI
