@@ -93,7 +93,6 @@
 	status = "okay";
 	sck-pin = <2>;
 	mosi-pin = <3>;
-	miso-pin = <4>;
 	cs-gpios = <&gpio0 5 GPIO_ACTIVE_HIGH>;
 
 };
