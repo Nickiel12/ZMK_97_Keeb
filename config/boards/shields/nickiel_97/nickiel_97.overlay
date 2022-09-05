@@ -91,9 +91,9 @@
 &spi0 {
 	compatible = "nordic,nrf-spim";
 	status = "okay";
-	sck-pin = <&pro_micro 15>;
-	mosi-pin = <&pro_micro 16>;
-	miso-pin = <&pro_micro 14>;
+	sck-pin = <15>;
+	mosi-pin = <16>;
+	miso-pin = <14>;
 	cs-gpios = <&pro_micro 5 GPIO_ACTIVE_HIGH>;
 
 };
