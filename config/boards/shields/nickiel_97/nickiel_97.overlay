@@ -8,6 +8,7 @@
 		zmk,kscan = &kscan;
 		zmk,matrix_transform = &transform;
 		zmk,backlight = &backlight;
+		zmk,keymap-sensors = &sensors;
 	};
 
 	backlight: pwmleds {
