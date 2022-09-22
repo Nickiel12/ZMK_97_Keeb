@@ -6,6 +6,12 @@ config ZMK_KEYBOARD_NAME
 config ZMK_KSCAN_MATRIX_POLLING
 	default y
 
+config ZMK_SLEEP
+	default n
+
+config ZMK_EXT_POWER
+	default n
+
 # backlight configs
 config ZMK_BACKLIGHT
 	default y
