@@ -26,7 +26,4 @@ config ZMK_BACKLIGHT_AUTO_OFF_IDLE
 	default y
 # end of backlight configs
 
-config SPI
-	default y
-
 endif
