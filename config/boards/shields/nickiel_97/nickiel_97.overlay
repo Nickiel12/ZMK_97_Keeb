@@ -46,7 +46,7 @@
 		diode-direction = "col2row";
 
 		col-gpios
-			= <&gpio0 17 (GPIO_ACTIVE_HIGH)>
+			= <&shift_reg 0 (GPIO_ACTIVE_HIGH)>
 			, <&shift_reg 1 (GPIO_ACTIVE_HIGH)>
 			, <&shift_reg 2 (GPIO_ACTIVE_HIGH)>
 			, <&shift_reg 3 (GPIO_ACTIVE_HIGH)>
@@ -89,9 +89,15 @@
 
 };
 
-&pro_micro_spi {
+&spi0 {
+	compatible = "nordic,nrf-spim";
 	status = "okay";
-	cs-gpios = <&pro_micro 7 GPIO_ACTIVE_LOW>;
+
+	sck-pin = <45>;
+	mosi-pin = <10>;
+	miso-pin = <43>;
+	cs-gpios = <&pro_micro 5 GPIO_ACTIVE_HIGH>;
+
 	shift_reg: 595@0 {
 		compatible = "zmk,gpio-595";
 		status = "okay";
@@ -102,16 +108,6 @@
 		#gpio-cells = <2>;
 		ngpios = <16>;
 	};
-};
-
-&spi0 {
-	compatible = "nordic,nrf-spim";
-	status = "okay";
-	sck-pin = <45>;
-	mosi-pin = <10>;
-	miso-pin = <43>;
-	cs-gpios = <&pro_micro 5 GPIO_ACTIVE_HIGH>;
-
 };
 
 &pwm0 {
