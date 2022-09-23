@@ -96,7 +96,7 @@
 	sck-pin = <45>;
 	mosi-pin = <10>;
 	miso-pin = <43>;
-	cs-gpios = <&pro_micro 5 GPIO_ACTIVE_HIGH>;
+	cs-gpios = <&pro_micro 5 GPIO_ACTIVE_LOW>;
 
 	shift_reg: 595@0 {
 		compatible = "zmk,gpio-595";
