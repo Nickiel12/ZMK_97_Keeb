@@ -10,7 +10,7 @@
 
 		combo_caps {
 			timeout-ms = <150>;
-			key-positions = <90 32>;
+			key-positions = <90 50>;
 			bindings = <&kp CAPS>;
 		};
 		//combo_capsword {
