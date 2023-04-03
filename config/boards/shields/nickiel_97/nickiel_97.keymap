@@ -8,16 +8,16 @@
   	combos {
 		compatible = "zmk,combos";
 
-		combo_esc {
+		combo_caps {
 			timeout-ms = <150>;
-			key-positions = <86 87 50>;
+			key-positions = <90 32>;
 			bindings = <&kp CAPS>;
 		};
-		combo_capsword {
-			timeout-ms = <150>;
-			key-positions = <86 87>;
-			bindings = <&caps_word>;
-		};
+		//combo_capsword {
+		//	timeout-ms = <150>;
+		//	key-positions = <86 87>;
+		//	bindings = <&caps_word>;
+		//};
 	};
 
 	keymap {
