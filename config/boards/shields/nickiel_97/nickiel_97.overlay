@@ -79,7 +79,7 @@
 		label = "BOTTOM_ENCODER";
 		a-gpios = <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 		b-gpios = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		resolution = <3>;
+		resolution = <4>;
 	};
 
 	sensors: sensor_node {
