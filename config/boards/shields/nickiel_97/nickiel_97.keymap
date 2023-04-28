@@ -23,12 +23,13 @@
 	};
 	
 	behaviours {
-		td0: tap_dance_encoder {
+		td0: tap_dance_0 {
 		    compatible = "zmk,behavior-tap-dance";
 		    label = "TAP_DANCE_ENCODER";
 		    #binding-cells = <0>;
 		    tapping-term-ms = <200>;
-		    bindings = <&mo MEDIA>, <&kp C_PLAY_PAUSE>, <&kp C_MUTE>;
+		    bindings = <&kp C_PLAY_PAUSE>, <&kp C_MUTE>;
+		    //bindings = <&mo MEDIA>, <&kp C_PLAY_PAUSE>, <&kp C_MUTE>;
 		};
 	};
 
