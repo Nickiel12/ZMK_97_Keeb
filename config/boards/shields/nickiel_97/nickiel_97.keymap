@@ -5,6 +5,7 @@
 
 #define DEFAULT 0
 #define MEDIA 1
+#define SCROLL 2
 
 /{
   	combos {
@@ -62,12 +63,24 @@
 	&mt LMETA ESC   &kp A     &kp S     &kp D     &kp F     &kp G     &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT             &kp ENTER   &kp KP_N4   &kp KP_N5      &kp KP_N6        &kp KP_PLUS
 	&kp LSHIFT &kp Z     &kp X     &kp C     &kp V     &kp B     &kp N     &kp M     &kp COMMA &kp PERIOD          &kp SLASH       &kp RSHIFT  &kp KP_N1   &kp KP_N2      &kp KP_N3        &kp KP_ENTER
 	//&kp LCTRL  &kp LMETA &kp LALT       &kp SPACE             &kp SPACE              &kp RALT  &kp RCTRL   &bl BL_CYCLE        &td0          &kp KP_N0              &kp KP_DOT                   
-	&kp LCTRL  &kp LMETA &kp LALT       &kp SPACE             &kp SPACE              &kp RALT  &mo MEDIA   &bl BL_CYCLE        &td0          &kp KP_N0              &kp KP_DOT                   
+	&kp LCTRL  &kp LMETA &kp LALT       &kp SPACE             &kp SPACE              &kp RALT  &mo SCROLL   &bl BL_CYCLE        &td0          &kp KP_N0              &kp KP_DOT                   
 			>;
 		};
 		
 		media_layer {
 			sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
+			bindings = <
+	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none   &none   &none
+	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none   &none   &none    &none  &none   &none  &none
+	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none   &none   &none    &none  &none   &none  &none
+	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none   &none            &none  &none   &none  &none
+	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none                    &none  &none   &none  &none
+	&none    &none    &none    &none             &none             &none    &none    &none    &none                            &none          &none                   
+			>;
+		};	
+		
+		scroll_layer {
+			sensor-bindings = <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
 			bindings = <
 	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none   &none   &none
 	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none   &none   &none    &none  &none   &none  &none
