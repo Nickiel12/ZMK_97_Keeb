@@ -67,7 +67,7 @@
 		};
 		
 		media_layer {
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
 			bindings = <
 	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none   &none   &none
 	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none   &none   &none    &none  &none   &none  &none
