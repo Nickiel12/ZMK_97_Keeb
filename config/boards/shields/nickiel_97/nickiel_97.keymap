@@ -23,7 +23,7 @@
 	};
 	
 	behaviours {
-		td0: tap_dance_encoder {=
+		td0: tap_dance_encoder {
 		    compatible = "zmk,behavior-tap-dance";
 		    label = "TAP_DANCE_ENCODER";
 		    #binding-cells = <0>;
