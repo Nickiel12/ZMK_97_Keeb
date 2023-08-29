@@ -28,6 +28,91 @@
 				, <&macro_release &kp LSHFT>
 				;
 		};
+
+		joy: joy {
+			label = "ZM_joy";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+			wait-ms = <20>;
+			tap-ms = <20>;
+			bindings =
+				  <&macro_press &kp LSHFT>
+				, <&macro_tap &kp SEMI>
+				, <&macro_release &kp LSHFT>
+				, <&macro_tap &kp J &kp O &kp Y>
+				, <&macro_press &kp LSHFT>
+				, <&macro_tap &kp SEMI>
+				, <&macro_release &kp LSHFT>
+				;
+		};
+
+		rofl: rofl {
+			label = "ZM_rofl";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+			wait-ms = <20>;
+			tap-ms = <20>;
+			bindings =
+				  <&macro_press &kp LSHFT>
+				, <&macro_tap &kp SEMI>
+				, <&macro_release &kp LSHFT>
+				, <&macro_tap &kp R &kp O &kp F &kp L>
+				, <&macro_press &kp LSHFT>
+				, <&macro_tap &kp SEMI>
+				, <&macro_release &kp LSHFT>
+				;
+		};
+
+		pensive: pensive {
+			label = "ZM_pensive";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+			wait-ms = <10>;
+			tap-ms = <20>;
+			bindings =
+				  <&macro_press &kp LSHFT>
+				, <&macro_tap &kp SEMI>
+				, <&macro_release &kp LSHFT>
+				, <&macro_tap &kp P &kp E &kp N &kp S &kp I &kp V &kp E>
+				, <&macro_press &kp LSHFT>
+				, <&macro_tap &kp SEMI>
+				, <&macro_release &kp LSHFT>
+				;
+		};
+
+		relieved: relieved {
+			label = "ZM_relieved";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+			wait-ms = <10>;
+			tap-ms = <20>;
+			bindings =
+				  <&macro_press &kp LSHFT>
+				, <&macro_tap &kp SEMI>
+				, <&macro_release &kp LSHFT>
+				, <&macro_tap &kp R &kp E &kp L &kp I &kp E &kp V &kp E &kp D>
+				, <&macro_press &kp LSHFT>
+				, <&macro_tap &kp SEMI>
+				, <&macro_release &kp LSHFT>
+				;
+		};
+		
+		death: death {
+			label = "ZM_death";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+			wait-ms = <10>;
+			tap-ms = <20>;
+			bindings =
+				  <&macro_press &kp LSHFT>
+				, <&macro_tap &kp SEMI>
+				, <&macro_release &kp LSHFT>
+				, <&macro_tap &kp D &kp E &kp A &kp T &kp H>
+				, <&macro_press &kp LSHFT>
+				, <&macro_tap &kp SEMI>
+				, <&macro_release &kp LSHFT>
+				;
+		};
 	};
 
   	combos {
@@ -107,9 +192,9 @@
 			bindings = <
 	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none   &none   &none
 	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none   &none   &none    &none  &none   &none  &none
-	&none    &none    &none    &burntjoy   &none    &none    &none    &none    &none    &none    &none   &none   &none   &none    &none  &none   &none  &none
-	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none   &none            &none  &none   &none  &none
-	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none                    &none  &none   &none  &none
+	&none    &none    &none    &none    &rofl  &relieved  &none    &none    &none    &none  &pensive  &none   &none   &none    &none  &none   &none  &none
+	&none    &none    &none    &death   &none    &none    &none    &joy    &none    &none    &none   &none   &none            &none  &none   &none  &none
+	&none    &none    &none    &none    &none    &burntjoy    &none    &none    &none    &none    &none   &none                    &none  &none   &none  &none
 	&none    &none    &none    &none             &none             &none    &none    &none    &none                                 &none     &none                   
 			>;
 		};	
