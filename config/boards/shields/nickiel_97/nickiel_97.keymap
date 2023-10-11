@@ -191,11 +191,11 @@
 			sensor-bindings = <&inc_dec_kp C_PREV C_NEXT>;
 			bindings = <
 	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none   &none   &none
-	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none   &none   &none    &none  &none   &none  &none
-	&none    &none    &none    &none    &rofl  &relieved  &none    &none    &none    &none  &pensive  &none   &none   &none    &none  &none   &none  &none
-	&none    &none    &none    &death   &none    &none    &none    &joy    &none    &none    &none   &none   &none            &none  &none   &none  &none
-	&none    &none    &none    &none    &none    &burntjoy    &none    &none    &none    &none    &none   &none                    &none  &none   &none  &none
-	&none    &none    &none    &none             &none             &none    &none    &none    &none                                 &none     &none                   
+	&none    &none    &none    &none    &none    &none    &none    &none    &none    &none    &none   &none   &none   &none        &none  &none   &none  &none
+	&none    &none    &none    &none    &rofl  &relieved  &none    &none    &none    &none  &pensive  &none   &none   &none        &none  &none   &none  &none
+	&none    &none    &none    &death   &none    &none    &none    &joy    &none    &none    &none   &none   &none                 &none  &none   &none  &none
+	&none    &none    &none    &none    &none    &burntjoy    &none    &none    &none    &none    &kp C_PLAY_PAUSE   &none                    &none  &none   &none  &none
+	&none    &none    &none    &none             &none             &kp C_PREV    &none    &kp C_NEXT    &none                                 &none     &none                   
 			>;
 		};	
 	};
