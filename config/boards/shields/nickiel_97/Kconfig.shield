@@ -1,2 +1,2 @@
 config NICKIEL_97
-	def_bool $(shields_list_contains,nickiel_97)
+	def_bool $(shields_list_contains,nickiel_97) 
